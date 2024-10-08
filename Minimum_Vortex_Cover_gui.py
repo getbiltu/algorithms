@@ -61,14 +61,14 @@ def find_minimum_vertex_cover(G):
     draw_graph(G)
 
 window = tk.Tk()
-window.title("Minimum Vertex Cover")
+window.title("Minimum Vertex Cover With Approximation Algorithms")
 
-nodes_label = tk.Label(window, text="Nodes (comma-separated):")
+nodes_label = tk.Label(window, text="Nodes (comma-separated): Ex. 2 ")
 nodes_label.pack()
 nodes_entry = tk.Entry(window)
 nodes_entry.pack()
 
-edges_label = tk.Label(window, text="Edges (comma-separated, semicolon-delimited):")
+edges_label = tk.Label(window, text="Edges (comma-separated, Hyphen-delimited  Ex. 1-2,2-3):")
 edges_label.pack()
 edges_entry = tk.Entry(window)
 edges_entry.pack()
@@ -76,7 +76,7 @@ edges_entry.pack()
 create_button = tk.Button(window, text="Create Graph", command=lambda: draw_graph(create_graph()))
 create_button.pack()
 
-mvc_button = tk.Button(window, text="Find Minimum Vertex Cover", command=lambda: find_minimum_vertex_cover(create_graph()))
+mvc_button = tk.Button(window, text="Find Minimum Vertex Cover ", command=lambda: find_minimum_vertex_cover(create_graph()))
 mvc_button.pack()
 
 result_label = tk.Label(window, text="")
